@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title></title>
     <style type="text/css">
         *{
@@ -51,6 +51,38 @@
             right:10px;
             top:20px;
         }
+        .main{
+            width:100%;
+            position:relative;
+        }
+        .back{
+            padding-left:5%;
+            padding-top:3%;
+        }
+        .logo{
+            display:block;
+            margin-left:33%;
+            padding-top:8%;
+        }
+        .main p{
+            margin: 0 auto;
+            line-height:180%;
+            font-size:200%;
+            padding:16%;
+        }
+        .left{
+            float:left;
+            padding-left:16%;
+            padding-bottom:20%;
+        }
+        .right{
+            float:right;
+            padding-right:16%;
+            padding-bottom:20%;
+        }
+        .block{
+            clear:both;
+        }
     </style>
 </head>
 <body>
@@ -66,11 +98,12 @@
         </div>
     </div>
     <div class="main">
-        <img src="images/back.png" alt="">
-        <img src="images/logo.png" alt="">
+        <img class="back" src="images/back.png" alt="">
+        <img class="logo" src="images/logo.png" alt="">
         <p>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具。</p>
-        <img src="images/left-icon.png" alt="">
-        <img src="images/right-icon.png" alt="">
+        <img class="left" src="images/left-icon.png" alt="">
+        <img class="right" src="images/right-icon.png" alt="">
+        <div class="block"></div>
     </div>
 </div>
 </body>
