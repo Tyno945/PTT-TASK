@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>九宫格页面</title>
-    <style>
+    <style type="text/css">
+        * {
+             -webkit-box-sizing: border-box;
+             -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
         .container{
-            width: 320px;
+            max-width: 36em;
+            width: 100%;
             margin: 0 auto;
         }
         .item{
             float:left;
-            width: 100px;
-            height: 100px;
+            width: 31.33%;
+            padding:15.67% 0;
             background-color: orange;
-            margin: 2px;
-            border-radius: 5px;
+            margin:1%;
+            border-radius: 1em;
+             -webkit-border-radius: 1em;
+             -moz-border-radius: 1em;
         }
     </style>
 </head>
