@@ -19,11 +19,32 @@
                 font-family: "Hiragino Sans GB W3";
             }
         }
-        .container{
+        .wrap{
             width:100%;
             max-width:640px;
             margin:0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #nav{
+            width:78.125%;
+            background-color: #ffffff;
+            position: absolute;
+        }
+        #nav li{
+            color: #29bde0;
+            font-size:300%;
+            padding:5% 0;
+            border-bottom:1px solid #c9c9c9;
+        }
+        .notice{
+            background: url(images/notice.png) no-repeat 6.7%;
+            background-size:9%;
+        }
+        .container{
+            position: relative;
             background-color: #f0f0f0;
+            transition: 0.5s ease-in-out;
         }
         .header{
             position: relative;
@@ -31,12 +52,21 @@
             background-color: #29bde0;
             padding:10% 0;
         }
+        .header label{
+            cursor: pointer;
+        }
         .header img{
             position: absolute;
             left:3.125%;
             top:62.5%;
             width:5.32%;
             max-width:34px;
+        }
+        #menu{
+            display: none;
+        }
+        #menu:checked~.container{
+            transform: translateX(65%) translateY(75px);
         }
         .main{
             width:100%;
@@ -99,25 +129,36 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="header">
-        <img src="images/menu.png" alt="">
+<div class="wrap">
+    <input id="menu" type="checkbox">
+    <div id="nav">
+        <ul>
+            <li class="notice">公告<img src="images/enter.png" alt=""></li>
+            <li class="set">设置<img src="images/enter.png" alt=""></li>
+            <li class="help">帮助<img src="images/enter.png" alt=""></li>
+            <li class="about">关于<img src="images/enter.png" alt=""></li>
+        </ul>
     </div>
-    <div class="main">
-        <div class="pre">
-            <p>上次游戏：捉鬼猜词版</p>
-            <img src="images/next1.png" alt="">
+    <div class="container">
+        <div class="header">
+            <label for="menu"><img src="images/menu.png" alt=""></label>
         </div>
-        <div class="content">
-            <h1>捉鬼游戏</h1>
-            <div>简化版</div>
-            <p>有1133个用户正在玩此款游戏</p>
-            <div>猜词版</div>
-            <p>有1133个用户正在玩此款游戏</p>
-            <div>白痴版</div>
-            <p>有1133个用户正在玩此款游戏</p>
-            <img class="more" src="images/more.png" alt="">
-            <img class="next" src="images/next2.png" alt="">
+        <div class="main">
+            <div class="pre">
+                <p>上次游戏：捉鬼猜词版</p>
+                <img src="images/next1.png" alt="">
+            </div>
+            <div class="content">
+                <h1>捉鬼游戏</h1>
+                <div>简化版</div>
+                <p>有1133个用户正在玩此款游戏</p>
+                <div>猜词版</div>
+                <p>有1133个用户正在玩此款游戏</p>
+                <div>白痴版</div>
+                <p>有1133个用户正在玩此款游戏</p>
+                <img class="more" src="images/more.png" alt="">
+                <img class="next" src="images/next2.png" alt="">
+            </div>
         </div>
     </div>
 </div>
