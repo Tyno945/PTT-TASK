@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size:62.5%;
+    font-family:"Hiragino Sans GB W3";
+    color: #ffffff;
+}
+.container{
+    width:100%;
+    max-width:640px;
+    max-height:1136px;
+    background-color: #29bde0;
+    margin:0 auto;
+    overflow: auto;
+}
+.header{
+    width:100%;
+    max-height:128px;
+    position: relative;
+
+}
+.menu{
+    padding:10%;
+    background: url(images/menu.png) no-repeat 0 70%;
+    background-size: 31.25%;
+    position: absolute;
+    left:3%;
+}
+.close{
+    padding:10%;
+    background: url(images/close.png) no-repeat 100% 70%;
+    background-size: 31.25%;
+    position: absolute;
+    right:3%;
+}
+h1{
+    text-align: center;
+    font-size:340%;
+    padding:10%;
+}
+.main{
+    position: relative;
+    width:100%;
+}
+h2{
+    font-size:260%;
+    color: #000;
+    padding:5% 0 5% 10%;
+    background: #b9e9f5 url(images/play.png) no-repeat 90% 50%;
+}
+.tell{
+    font-size:240%;
+    margin:5% 0 5% 15%;
+}
+.layout{
+    width:33.33%;
+    float: left;
+}
+.box{
+    position: relative;
+    border:5px solid #ffffff;
+    margin:20%;
+    background: #f5c97b;
+    padding:20% 0;
+}
+.box p{
+    text-align: center;
+    font-size:300%;
+    color: #000;
+}
+.num{
+    position: absolute;
+    bottom:0;
+    background: #83b09a;
+    width:100%;
+    text-align: center;
+    font-size:226.7%;
+}
+.footer{
+    clear: both;
+    background: #29bde0;
+}
+.quit{
+    margin:0 auto;
+    width:70%;
+    padding:5%;
+    background: #fbb435;
+    text-align: center;
+    font-size:400%;
+}
