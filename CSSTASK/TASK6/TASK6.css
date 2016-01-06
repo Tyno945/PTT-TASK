@@ -7,13 +7,18 @@ body{
     font-family:"Hiragino Sans GB W3";
     color: #ffffff;
 }
+@media only screen and (max-width: 500px) {
+    body{
+        font-size:31.25%;
+        font-family: "Hiragino Sans GB W3";
+    }
+}
 .container{
     width:100%;
     max-width:640px;
     max-height:1136px;
     background-color: #29bde0;
     margin:0 auto;
-    overflow: auto;
 }
 .header{
     width:100%;
@@ -58,6 +63,38 @@ h2{
     width:33.33%;
     float: left;
 }
+.layout ul{
+    position: relative;
+    margin-left:20%;
+    margin-top:-15%;
+}
+.layout li{
+    position: absolute;
+    list-style:none;
+    top:0;
+    height:30px;
+    display: block;
+}
+.cat-1{
+    left:0;
+    width:34px;
+    background: url(images/sprite.png) -130px 0;
+}
+.cat-2{
+    left:35px;
+    width:34px;
+    background: url(images/sprite.png) -165px 0;
+}
+.cat-3{
+    left:70px;
+    width:34px;
+    background: url(images/sprite.png) -200px 0;
+}
+.cat-4{
+    left:100px;
+    width:34px;
+    background: url(images/sprite.png) -230px 0;
+}
 .box{
     position: relative;
     border:5px solid #ffffff;
@@ -78,8 +115,14 @@ h2{
     text-align: center;
     font-size:226.7%;
 }
-.footer{
+.clear{
     clear: both;
+}
+.footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    max-width:640px;
     background: #29bde0;
 }
 .quit{
