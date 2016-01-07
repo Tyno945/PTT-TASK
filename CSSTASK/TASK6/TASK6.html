@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>TASK6</title>
     <link rel="stylesheet" TYPE="text/css" href="TASK6.css">
+    <script>
+        function a(){
+            var audio=document.getElementById('music');
+            if(audio.paused){
+                audio.play();//audio.play();// 播放
+            }
+            else{
+                audio.pause();// 暂停
+            }
+        }
+    </script>
 </head>
 <body>
 <div class="container">
@@ -14,7 +25,10 @@
         <h1>投票</h1>
     </div>
     <div class="main">
-        <h2>发言讨论结束，请大家投票</h2>
+        <h2>发言讨论结束，请大家投票
+            <img id="play" src="images/play.png" alt="play" onclick="a()">
+            <audio src="free.mp3" controls="controls" preload id="music" hidden></audio>
+        </h2>
         <div class="tell">点击得票数最多人的头像</div>
         <div class="layout">
             <div class="box">
