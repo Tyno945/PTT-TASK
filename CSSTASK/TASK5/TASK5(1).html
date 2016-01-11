@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="TASK5(1).css">
+    <title>TASK5</title>
+</head>
+<body>
+<div class="wrap">
+    <div id="nav">
+        <div class="header"></div>
+        <ul>
+            <li class="notice">公告<img src="images/enter.png" alt=""></li>
+            <li class="set">设置<img src="images/enter.png" alt=""></li>
+            <li class="help">帮助<img src="images/enter.png" alt=""></li>
+            <li class="about">关于<img src="images/enter.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="container" id="container">
+        <div class="header">
+            <img id="menu" src="images/menu.png" alt="" onclick="k()">
+        </div>
+        <div class="main">
+            <div class="pre">
+                <p>上次游戏：捉鬼猜词版</p>
+                <img src="images/next1.png" alt="">
+            </div>
+            <div class="content">
+                <h1>捉鬼游戏</h1>
+                <div>简化版</div>
+                <p>有1133个用户正在玩此款游戏</p>
+                <div>猜词版</div>
+                <p>有1133个用户正在玩此款游戏</p>
+                <div>白痴版</div>
+                <p>有1133个用户正在玩此款游戏</p>
+                <img class="more" src="images/more.png" alt="">
+                <img class="next" src="images/next2.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function k()
+    {
+        var a=document.getElementById("container");
+        var step=640;
+        a.style.left=0.5*step;
+    }
+</script>
+</body>
+</html>
